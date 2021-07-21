@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+form<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
+    <script src="assets/js/login.js"></script>
   </head>
 
   <body>
@@ -74,9 +74,11 @@
       <div class="">
         <div class="banner-item-01">
           <div class="text-content">
-           <h4>USERNAME:<input type="text" name="username" id="username"></h4> <br>
-           <h4>PASSWORD:<input type="text" name="password" id="password"></h4> <br>
-           <input type="button" name="submit" id="submit" value="SUBMIT">
+          <form id="form_id" method="post" name="myform">
+            USERNAME:<input type="text" name="username" id="username"> <br>
+            PASSWORD:<input type="password" name="password" id="password"> <br>
+            <input type="button" name="login" id="login" value="Login" onclick="validate()">
+          </form>
           </div>
         </div>
         
